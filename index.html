@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My ToDo App</title>
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/store.js" defer></script>
+    <script src="./assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="todos-head">
+        <h1><span id="app-icon"><i class="fas fa-calendar-check"></i></span> My <span>ToDos</span></h1>
+      </div>
+      <div class="todos">
+        <div class="alert hide"></div>
+        <div class="todos-input">
+          <div class="input-group">
+            <div class="formgroup">
+              <label for="deadlineDate">Deadline</label>
+              <input type="date" id="deadlineDate" />
+            </div>
+            <div class="formgroup">
+              <label for="todoPriority">Priority</label>
+              <select id="todoPriority">
+                <option disabled aria-hidden="true" selected>
+                  Set Priority
+                </option>
+                <option value="low">Low</option>
+                <option value="normal">Normal</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+          </div>
+          <textarea
+            id="todoTextInpt"
+            placeholder="Add Todo Text"
+            rows="5"
+          ></textarea>
+          <button id="addTodo">Add</button>
+        </div>
+        <div class="todos-list">
+          <ul class="todos-list__items"></ul>
+        </div>
+      </div>
+    </main>
+    <footer><p>Project By Aman Zahid</p></footer>
+  </body>
+</html>
